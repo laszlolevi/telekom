@@ -33,7 +33,7 @@ POST és PUT szolgáltatásoknál a body-t küldje vissza a válaszban a kulcs �
 
 ## Alkalmazás indítása:
 ### Docker compose fájllal:
-``cd telekom``
+``cd telekom/docker``
 ``docker-compose -f dc-server.yml up``
 Ha a user nem 1000-es akkor a ``docker/dc-server.yml``-ben tudja átállítani
 ### vagy
