@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  server:
+    image: node:17-alpine
+    user: "1000:1000"
+    logging:
+      options:
+        max-size: "10k"
+        max-file: "3"
+    environment:
+      APPLICATION_HOME: /usr/local/backend
+    volumes:
+      - ../backend:/usr/local/app
+    ports:
+      - "3000:3000"
+    working_dir: /usr/local/app
+    command: npm run start

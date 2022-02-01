@@ -1,0 +1,7 @@
+version: '3.0'
+maintainer: "operations@shiwaforce.com"
+
+plan:
+  default:
+    docker-compose-file:
+      - docker/dc-server.yml
